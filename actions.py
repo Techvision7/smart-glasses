@@ -70,20 +70,3 @@ class action:
         current_x, current_y = self.mouse_cntrl.position()
         self.mouse_cntrl.click(current_x, current_y, self.right_click)
         self.prev_state = 'three'
-
-    '''def four(self, hull_p):
-        # four fingers; drag and drop
-        print "Drag and Drop"
-        if self.prev_state != 'four':
-            x, y = self.mouse_cntrl.position()
-            self.mouse_cntrl.press(x,y)
-            self.prev_state = 'four'
-            self.prev_coordinates[0] = hull_p[0]
-            self.prev_coordinates[1] = hull_p[1]
-        elif self.prev_state == 'four':
-            x, y = self.mouse_cntrl.position()
-            new_x, new_y = x + self.sensitivity * self.x_convert * (-1 * \
-                    self.prev_coordinates[0] + hull_p[0]), \
-                    y + self.sensitivity * self.y_convert *\
-                    (-1 * self.prev_coordinates[1] + hull_p[1])
-            self.mouse_cntrl.move(int(new_x), int(new_y))'''
